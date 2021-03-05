@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8675254348459798115}
   - component: {fileID: 8675254348459798116}
   - component: {fileID: 8675254348459798117}
-  - component: {fileID: 5862938437375782875}
-  - component: {fileID: 6173845912771502574}
+  - component: {fileID: 3305833369805541862}
+  - component: {fileID: 1568483233635138342}
   m_Layer: 0
   m_Name: Fruit2
   m_TagString: Untagged
@@ -81,7 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!54 &5862938437375782875
+--- !u!54 &3305833369805541862
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,7 +97,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6173845912771502574
+--- !u!114 &1568483233635138342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,6 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887514bdb990e8943b2d60b90e107439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalForce: 500
+  verticalForce: 400
   horizontalForce: 150
   lifetime: 3
