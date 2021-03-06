@@ -9,8 +9,8 @@ public class GameController : MonoBehaviour
     [SerializeField] Player player;
     [SerializeField] TextMesh infoText;
     [SerializeField] float horizontalArea = 5f;
-    [SerializeField] float spawnDuration = 3f;
-    [SerializeField] float gameTimer = 15f;
+    [SerializeField] float spawnDuration = 5f;
+    [SerializeField] float gameTimer = 30f;
     [SerializeField] float resetTimer = 7f;
 
     private float spawnTimer;
@@ -46,7 +46,7 @@ public class GameController : MonoBehaviour
 
             infoText.text = "Destroy the Food Supply!\nTime: " + Mathf.Floor(gameTimer) + "\nScore: " + player.score;
         } else {
-            infoText.text = "FINISHED! Score: " + player.score;
+            infoText.text = "FINISHED!\nScore: " + player.score;
 
             resetTimer -= Time.deltaTime;
             if (resetTimer <= 0f) {

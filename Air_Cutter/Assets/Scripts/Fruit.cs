@@ -5,7 +5,8 @@ using UnityEngine;
 public class Fruit : MonoBehaviour
 {
     [SerializeField] float verticalForce = 400f;
-    [SerializeField] float horizontalForce = 150f;
+    [SerializeField] float horizontalForce = 10f;
+    [SerializeField] float zForce = 300f;
     [SerializeField] float lifetime = 3f;
 
     // Start is called before the first frame update
@@ -15,7 +16,7 @@ public class Fruit : MonoBehaviour
         rigidbody.AddForce(new Vector3(
             Random.Range(-horizontalForce, horizontalForce),
             verticalForce,
-            0
+            -zForce
         ));
     }
 
